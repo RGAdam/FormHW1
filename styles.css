@@ -114,6 +114,11 @@ input[type="checkbox"] {
   margin: 0;
 }
 
+a:visited {
+  color: #17494d;
+  text-decoration: none;
+}
+
 input[type="submit"] {
   width: 100%;
   padding: 15px 15px;
