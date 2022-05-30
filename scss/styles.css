@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #17494d;
+}
+
+body {
+  margin: auto;
+  width: 35%;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+header p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .form {
+  display: flex;
+  flex-direction: column;
+}
+main .form .flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .form .flexRow__boldLabel {
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+}
+main .form .flexRow .gap {
+  margin-right: 20px;
+}
+main .form .flexRow .flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .form .flexRow .flexCol button {
+  width: 100%;
+  height: 40px;
+  margin: 2px 10px;
+  background-color: white;
+  color: #17494d;
+  border: 1px solid #17494d;
+  border-radius: 4px;
+}
+main .form .flexRow .flexCol button:active {
+  font-weight: bold;
+  border: 2px solid #17494d;
+}
+main .form__boldLabel {
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+}
+main .form input[type=text] {
+  width: 100%;
+  height: 45px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 1px solid #17494d;
+  background-color: #f8f9f9;
+  outline: none;
+  color: #17494d;
+  font-size: 17px;
+  font-weight: 400;
+}
+main .form input[type=text]:hover {
+  border: 2px solid #17494d;
+}
+main .form input[type=text]:focus {
+  border: 2px solid #17494d;
+}
+main .form textarea {
+  width: 100%;
+  height: 70px;
+  max-height: 200px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  resize: vertical;
+  border: 1px solid #17494d;
+  background-color: #f8f9f9;
+  outline: none;
+  color: #17494d;
+  font-size: 17px;
+  font-weight: normal;
+}
+main .form textarea:focus {
+  border: 2px solid #17494d;
+}
+main .form textarea:hover {
+  border: 2px solid #17494d;
+}
+main .form a:visited {
+  color: #17494d;
+  text-decoration: none;
+}
+main .form input[type=submit] {
+  width: 100%;
+  padding: 15px 15px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #17494d;
+  border-radius: 0;
+  border: 2px solid #17494d;
+  color: #f8f9f9;
+  transition-duration: 0.4s;
+}
+main .form input[type=submit]:hover {
+  background-color: #236e74;
+}
+
+/*# sourceMappingURL=styles.css.map */

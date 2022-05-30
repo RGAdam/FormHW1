@@ -1,0 +1,150 @@
+@import "variables";
+@import "init";
+
+@mixin flexCenter($flexDirection) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $flexDirection;
+}
+
+body {
+  margin: auto;
+  width: 35%;
+}
+
+header {
+  text-align: center;
+
+  h1 {
+    font-size: 30px;
+    font-weight: map-get($font-weight, bold);
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    .flexRow {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      &__boldLabel {
+        width: 100%;
+        font-weight: map-get($font-weight, bold);
+        font-size: 15px;
+      }
+
+      .gap {
+        margin-right: 20px;
+      }
+
+      .flexCol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          width: 100%;
+          height: 40px;
+          margin: 2px 10px;
+          background-color: white;
+          color: #17494d;
+          border: 1px solid #17494d;
+          border-radius: 4px;
+
+          &:active {
+            font-weight: bold;
+            border: 2px solid #17494d;
+          }
+        }
+      }
+    }
+
+    &__boldLabel {
+      width: 100%;
+      font-weight: map-get($font-weight, bold);
+      font-size: 15px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      height: 45px;
+      padding: 12px 20px;
+      margin: 10px 0;
+      border: 1px solid $secondary-color;
+      background-color: $primary-color;
+      outline: none;
+      color: $secondary-color;
+      font-size: 17px;
+      font-weight: map-get($font-weight, regular);
+
+      &:hover {
+        border: 2px solid $secondary-color;
+      }
+
+      &:focus {
+        border: 2px solid $secondary-color;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 70px;
+      max-height: 200px;
+      padding: 12px 20px;
+      margin: 10px 0;
+      resize: vertical;
+      border: 1px solid $secondary-color;
+      background-color: $primary-color;
+      outline: none;
+      color: $secondary-color;
+      font-size: 17px;
+      font-weight: normal;
+
+      &:focus {
+        border: 2px solid $secondary-color;
+      }
+
+      &:hover {
+        border: 2px solid $secondary-color;
+      }
+    }
+
+    a:visited {
+      color: $secondary-color;
+      text-decoration: none;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 15px 15px;
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: $secondary-color;
+      border-radius: 0;
+      border: 2px solid $secondary-color;
+      color: $primary-color;
+      transition-duration: 0.4s;
+
+      &:hover {
+        background-color: lighten($secondary-color, 10%);
+      }
+    }
+  }
+}

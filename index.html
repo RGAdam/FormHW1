@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="scss/styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Contact us</title>
   </head>
 
   <body>
-
     <header>
       <h1>Contact Sales</h1>
-      <p>Let’s get this conversation started. Tell us a bit about yourself, and we’ll get in touch as soon as we can.</p>
+      <p>
+        Let’s get this conversation started. Tell us a bit about yourself, and
+        we’ll get in touch as soon as we can.
+      </p>
     </header>
 
-    <form class="form" action="index.html" method="post">
-
-      <div class="twoCol">
-        <div class="col1">
-          <label id="boldLabel" for="fname">First name</label>
-          <input type="text" name="fname">
+    <main>
+      <form class="form" action="index.html" method="post">
+        <div class="flexRow">
+          <label class="flexRow__boldLabel gap"
+            >First name
+            <input type="text" name="firstName" />
+          </label>
+          <label class="flexRow__boldLabel"
+            >Last name
+            <input type="text" name="lastName" />
+          </label>
         </div>
 
-        <div class="col2">
-          <label id="boldLabel" for="lname">Last name</label>
-          <input type="text" name="lname">
-        </div>
-      </div>
-
-      <label id="boldLabel" for="email">Work email</label>
-      <input type="text" name="email">
-
-      <label id="boldLabel" for="message">Message</label>
-      <textarea name="message" rows="8" cols="80"></textarea>
-
-      <label id="boldLabel" for="phonenumber">Phone number</label>
-      <input type="text" name="phonenumber">
-
-      <label id="boldLabel" for="companyname">Company name</label>
-      <input type="text" name="companyname">
-
-      <label id="boldLabel" for="numberofemployees">Number of employees</label>
-
-      <div class="twoColButtons">
-        <div class="col1">
-          <button type="button" name="button">1-9</button> <br>
-          <button type="button" name="button">50-99</button> <br>
-          <button type="button" name="button">250-499</button> <br>
-          <button type="button" name="button">1000-4999</button> <br>
-        </div>
-
-        <div class="col2">
-          <button type="button" name="button">10-49</button> <br>
-          <button type="button" name="button">100-249</button> <br>
-          <button type="button" name="button">500-999</button> <br>
-          <button type="button" name="button">5000+</button> <br>
-        </div>
-      </div>
-
-      <div class="checkboxdiv">
-        <label for="checkbox">
-          <input type="checkbox" name="emailsubcription" value="">
-          Please also send me occasional emails about Zendesk products and services. (You can unsubscribe at any time.)
+        <label class="form__boldLabel"
+          >Work email
+          <input type="text" name="email" />
         </label>
-        <p>By submitting my personal information, I understand and agree that Zendesk may collect, process, and retain my data pursuant to the <a href="https://www.zendesk.com/company/agreements-and-terms/privacy-policy/" target="_blank">Zendesk Privacy Policy</a>.</p>
-      </div>
+        <label class="form__boldLabel"
+          >Message
+          <textarea name="message" rows="8" cols="80"></textarea>
+        </label>
+        <label class="form__boldLabel"
+          >Phone number
+          <input type="text" name="phoneNumber" />
+        </label>
+        <label class="form__boldLabel"
+          >Company name
+          <input type="text" name="companyName" />
+        </label>
 
-      <input type="submit" name="submitbutton" value="Contact Sales">
+        <label class="form__boldLabel">Number of employees</label>
+        <div class="flexRow">
+          <div class="flexCol gap">
+            <button type="button" name="button">1-9</button>
+            <button type="button" name="button">50-99</button>
+            <button type="button" name="button">250-499</button>
+            <button type="button" name="button">1000-4999</button>
+          </div>
+          <div class="flexCol">
+            <button type="button" name="button">10-49</button>
+            <button type="button" name="button">100-249</button>
+            <button type="button" name="button">500-999</button>
+            <button type="button" name="button">5000+</button>
+          </div>
+        </div>
 
-    </form>
+        <label class="checkboxContainer__checkboxLabel">
+          <input type="checkbox" name="emailSubscription" value="" />
+          Please also send me occasional emails about Zendesk products and
+          services. (You can unsubscribe at any time.)
+        </label>
+        <p>
+          By submitting my personal information, I understand and agree that
+          Zendesk may collect, process, and retain my data pursuant to the
+          <a
+            href="https://www.zendesk.com/company/agreements-and-terms/privacy-policy/"
+            target="_blank"
+            >Zendesk Privacy Policy</a
+          >.
+        </p>
+
+        <input type="submit" name="submitButton" value="Contact Sales" />
+      </form>
+    </main>
   </body>
 </html>
