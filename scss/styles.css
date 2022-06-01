@@ -11,7 +11,7 @@
 body {
   margin: auto;
   width: 35%;
-  min-width: 500px;
+  min-width: 450px;
 }
 
 header {
@@ -35,27 +35,21 @@ main .form {
   display: flex;
   flex-direction: column;
 }
-main .form .flexRow {
+main .form .flex-row-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
-main .form .flexRow__boldLabel {
-  width: 100%;
-  font-weight: 700;
-  font-size: 15px;
-}
-main .form .flexRow .gap {
+main .form .flex-row-container .gap {
   margin-right: 20px;
 }
-main .form .flexRow .flexCol {
+main .form .flex-row-container .flex-col-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-main .form .flexRow .flexCol button {
+main .form .flex-row-container .flex-col-container button {
   width: 100%;
   height: 40px;
   margin: 2px 30px;
@@ -64,15 +58,16 @@ main .form .flexRow .flexCol button {
   border: 1px solid #17494d;
   border-radius: 4px;
 }
-main .form .flexRow .flexCol button:active {
+main .form .flex-row-container .flex-col-container button:active {
   font-weight: bold;
   border: 2px solid #17494d;
 }
-main .form .flexRow .flexCol button:hover {
+main .form .flex-row-container .flex-col-container button:hover {
   cursor: pointer;
   border-color: #88d5db;
 }
-main .form__boldLabel {
+main .form .bold-label {
+  margin-top: 15px;
   width: 100%;
   font-weight: 700;
   font-size: 15px;
@@ -81,7 +76,6 @@ main .form input[type=text] {
   width: 100%;
   height: 45px;
   padding: 12px 20px;
-  margin: 10px 0;
   border: 1px solid #17494d;
   background-color: #f8f9f9;
   outline: none;
@@ -100,7 +94,6 @@ main .form textarea {
   height: 70px;
   max-height: 200px;
   padding: 12px 20px;
-  margin: 10px 0;
   resize: vertical;
   border: 1px solid #17494d;
   background-color: #f8f9f9;
@@ -114,6 +107,17 @@ main .form textarea:focus {
 }
 main .form textarea:hover {
   border: 2px solid #17494d;
+}
+main .form .checkbox-container {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+main .form .checkbox-container input[type=checkbox] {
+  margin-right: 15px;
+}
+main .form .checkbox-container .checkbox-label {
+  font-size: 13px;
 }
 main .form a:visited {
   color: #17494d;

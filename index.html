@@ -25,55 +25,58 @@
 
     <main>
       <form class="form" action="index.html" method="post">
-        <div class="flexRow">
-          <label class="flexRow__boldLabel gap"
+        <div class="flex-row-container">
+          <label class="bold-label gap"
             >First name
             <input type="text" name="firstName" />
           </label>
-          <label class="flexRow__boldLabel"
+          <label class="bold-label"
             >Last name
             <input type="text" name="lastName" />
           </label>
         </div>
 
-        <label class="form__boldLabel"
+        <label class="bold-label"
           >Work email
           <input type="text" name="email" />
         </label>
-        <label class="form__boldLabel"
+        <label class="bold-label"
           >Message
           <textarea name="message" rows="8" cols="80"></textarea>
         </label>
-        <label class="form__boldLabel"
+        <label class="bold-label"
           >Phone number
           <input type="text" name="phoneNumber" />
         </label>
-        <label class="form__boldLabel"
+        <label class="bold-label"
           >Company name
           <input type="text" name="companyName" />
         </label>
 
-        <label class="form__boldLabel">Number of employees</label>
-        <div class="flexRow">
-          <div class="flexCol gap">
-            <button type="button" name="button">1-9</button>
-            <button type="button" name="button">50-99</button>
-            <button type="button" name="button">250-499</button>
-            <button type="button" name="button">1000-4999</button>
+        <label class="bold-label">Number of employees</label>
+        <div class="flex-row-container">
+          <div class="flex-col-container gap">
+            <button type="button">1-9</button>
+            <button type="button">50-99</button>
+            <button type="button">250-499</button>
+            <button type="button">1000-4999</button>
           </div>
-          <div class="flexCol">
-            <button type="button" name="button">10-49</button>
-            <button type="button" name="button">100-249</button>
-            <button type="button" name="button">500-999</button>
-            <button type="button" name="button">5000+</button>
+          <div class="flex-col-container">
+            <button type="button">10-49</button>
+            <button type="button">100-249</button>
+            <button type="button">500-999</button>
+            <button type="button">5000+</button>
           </div>
         </div>
 
-        <label class="checkboxContainer__checkboxLabel">
-          <input type="checkbox" name="emailSubscription" value="" />
-          Please also send me occasional emails about Zendesk products and
-          services. (You can unsubscribe at any time.)
-        </label>
+        <div class="checkbox-container">
+          <input type="checkbox" />
+          <label class="checkbox-label"
+            >Please also send me occasional emails about Zendesk products and
+            services. (You can unsubscribe at any time.)</label
+          >
+        </div>
+
         <p>
           By submitting my personal information, I understand and agree that
           Zendesk may collect, process, and retain my data pursuant to the
@@ -84,7 +87,7 @@
           >.
         </p>
 
-        <input type="submit" name="submitButton" value="Contact Sales" />
+        <input type="submit" value="Contact Sales" />
       </form>
     </main>
   </body>
