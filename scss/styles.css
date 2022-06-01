@@ -13,43 +13,47 @@ body {
   width: 35%;
   min-width: 450px;
 }
-
-header {
+body header {
   text-align: center;
 }
-header h1 {
+body header h1 {
   font-size: 30px;
   font-weight: 700;
   margin: 20px 0;
 }
-header p {
+body header p {
   font-size: 15px;
   margin-bottom: 20px;
 }
-
-main {
+body .main {
   height: 100%;
   width: 100%;
 }
-main .form {
+body .main__form {
   display: flex;
   flex-direction: column;
 }
-main .form .flex-row-container {
+body .main__form__flex-row-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main .form .flex-row-container .gap {
+body .main__form__flex-row-container__bold-label {
+  margin-top: 15px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+}
+body .main__form__flex-row-container--gap {
   margin-right: 20px;
 }
-main .form .flex-row-container .flex-col-container {
+body .main__form__flex-row-container__flex-col-container {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .form .flex-row-container .flex-col-container button {
+body .main__form__flex-row-container__flex-col-container button {
   width: 100%;
   height: 40px;
   margin: 2px 30px;
@@ -58,21 +62,21 @@ main .form .flex-row-container .flex-col-container button {
   border: 1px solid #17494d;
   border-radius: 4px;
 }
-main .form .flex-row-container .flex-col-container button:active {
+body .main__form__flex-row-container__flex-col-container button:active {
   font-weight: bold;
   border: 2px solid #17494d;
 }
-main .form .flex-row-container .flex-col-container button:hover {
+body .main__form__flex-row-container__flex-col-container button:hover {
   cursor: pointer;
   border-color: #88d5db;
 }
-main .form .bold-label {
+body .main__form__bold-label {
   margin-top: 15px;
   width: 100%;
   font-weight: 700;
   font-size: 15px;
 }
-main .form input[type=text] {
+body .main__form input[type=text] {
   width: 100%;
   height: 45px;
   padding: 12px 20px;
@@ -83,13 +87,13 @@ main .form input[type=text] {
   font-size: 17px;
   font-weight: 400;
 }
-main .form input[type=text]:hover {
+body .main__form input[type=text]:hover {
   border: 2px solid #17494d;
 }
-main .form input[type=text]:focus {
+body .main__form input[type=text]:focus {
   border: 2px solid #17494d;
 }
-main .form textarea {
+body .main__form textarea {
   width: 100%;
   height: 70px;
   max-height: 200px;
@@ -102,28 +106,28 @@ main .form textarea {
   font-size: 17px;
   font-weight: normal;
 }
-main .form textarea:focus {
+body .main__form textarea:focus {
   border: 2px solid #17494d;
 }
-main .form textarea:hover {
+body .main__form textarea:hover {
   border: 2px solid #17494d;
 }
-main .form .checkbox-container {
+body .main__form__checkbox-container {
   display: flex;
   margin: 10px 0;
   align-items: center;
 }
-main .form .checkbox-container input[type=checkbox] {
+body .main__form__checkbox-container input[type=checkbox] {
   margin-right: 15px;
 }
-main .form .checkbox-container .checkbox-label {
+body .main__form__checkbox-container__checkbox-label {
   font-size: 13px;
 }
-main .form a:visited {
+body .main__form a:visited {
   color: #17494d;
   text-decoration: none;
 }
-main .form input[type=submit] {
+body .main__form input[type=submit] {
   width: 100%;
   padding: 15px 15px;
   margin-top: 10px;
@@ -135,7 +139,7 @@ main .form input[type=submit] {
   color: #f8f9f9;
   transition-duration: 0.4s;
 }
-main .form input[type=submit]:hover {
+body .main__form input[type=submit]:hover {
   background-color: #236e74;
 }
 

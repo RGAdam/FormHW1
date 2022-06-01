@@ -23,45 +23,48 @@
       </p>
     </header>
 
-    <main>
-      <form class="form" action="index.html" method="post">
-        <div class="flex-row-container">
-          <label class="bold-label gap"
+    <main class="main">
+      <form class="main__form" action="index.html" method="post">
+        <div class="main__form__flex-row-container">
+          <label
+            class="main__form__flex-row-container__bold-label main__form__flex-row-container--gap"
             >First name
             <input type="text" name="firstName" />
           </label>
-          <label class="bold-label"
+          <label class="main__form__flex-row-container__bold-label"
             >Last name
             <input type="text" name="lastName" />
           </label>
         </div>
 
-        <label class="bold-label"
+        <label class="main__form__bold-label"
           >Work email
           <input type="text" name="email" />
         </label>
-        <label class="bold-label"
+        <label class="main__form__bold-label"
           >Message
           <textarea name="message" rows="8" cols="80"></textarea>
         </label>
-        <label class="bold-label"
+        <label class="main__form__bold-label"
           >Phone number
           <input type="text" name="phoneNumber" />
         </label>
-        <label class="bold-label"
+        <label class="main__form__bold-label"
           >Company name
           <input type="text" name="companyName" />
         </label>
 
-        <label class="bold-label">Number of employees</label>
-        <div class="flex-row-container">
-          <div class="flex-col-container gap">
+        <label class="main__form__bold-label">Number of employees</label>
+        <div class="main__form__flex-row-container">
+          <div
+            class="main__form__flex-row-container__flex-col-container main__form__flex-row-container--gap"
+          >
             <button type="button">1-9</button>
             <button type="button">50-99</button>
             <button type="button">250-499</button>
             <button type="button">1000-4999</button>
           </div>
-          <div class="flex-col-container">
+          <div class="main__form__flex-row-container__flex-col-container">
             <button type="button">10-49</button>
             <button type="button">100-249</button>
             <button type="button">500-999</button>
@@ -69,9 +72,9 @@
           </div>
         </div>
 
-        <div class="checkbox-container">
+        <div class="main__form__checkbox-container">
           <input type="checkbox" />
-          <label class="checkbox-label"
+          <label class="main__form__checkbox-container__checkbox-label"
             >Please also send me occasional emails about Zendesk products and
             services. (You can unsubscribe at any time.)</label
           >
